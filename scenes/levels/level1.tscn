@@ -1,5 +1,50 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 17.8206, 10 )
 
 [node name="level1" type="Node2D" index="0"]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+modulate = Color( 0.846512, 0.90625, 0.141602, 1 )
+position = Vector2( 21, 2 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="staticbody" type="StaticBody2D" parent="Sprite" index="0"]
+
+position = Vector2( 454.205, 493.398 )
+scale = Vector2( 22.8583, 2.64214 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Material" ]
+
+[node name="collision" type="CollisionShape2D" parent="Sprite/staticbody" index="0"]
+
+position = Vector2( -11.4399, -88.0675 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[node name="player" parent="." index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 198.338, 217.715 )
+
+[node name="Line2D" type="Line2D" parent="." index="2"]
+
+points = PoolVector2Array( -0.999969, 238, 478, 237 )
+width = 2.0
+default_color = Color( 0.4, 0.5, 1, 1 )
+texture_mode = 362184176
+sharp_limit = 2.0
+round_precision = 8
 
 
