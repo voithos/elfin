@@ -1,0 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=3
+
+[application]
+
+config/name="Elfin"
+run/main_scene="res://scenes/levels/level1.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+screen="*res://scripts/screen.gd"
+
+[display]
+
+window/size/width=960
+window/size/height=540
+window/size/test_width=960
+window/size/test_height=540
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[rendering]
+
+quality/shadows/filter_mode=0
+environment/default_environment="res://default_env.tres"
