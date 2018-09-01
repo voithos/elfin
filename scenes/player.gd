@@ -10,6 +10,7 @@ onready var camera = get_node("camera")
 
 const STATE_IDLE = "IDLE"
 const STATE_PUSHPULL = "PUSHPULL"
+const STATE_VICTORY = "VICTORY"
 
 onready var nearby_attractors = []
 onready var state = STATE_IDLE
@@ -18,6 +19,9 @@ func _ready():
 	pass
 
 func _input(event):
+	if state == STATE_VICTORY:
+		return
+
 	if event is InputEventMouseMotion:
 		_handle_mouse_motion(event)
 
@@ -25,6 +29,12 @@ func _process(delta):
 	pass
 
 func _physics_process(delta):
+	if state == STATE_VICTORY:
+		return
+
+	_process_physics_action(delta)
+
+func _process_physics_action(delta):
 	var multiplier = 0
 	if Input.is_action_pressed("elfin_pull"):
 		multiplier = 1
@@ -73,3 +83,8 @@ func _collect_attractors():
 			nearby.append(attractor)
 
 	nearby_attractors = nearby
+
+func finish_level():
+	state = STATE_VICTORY
+	nearby_attractors = []
+	sleeping = true
