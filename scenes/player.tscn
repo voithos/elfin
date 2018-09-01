@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/rays.gd" type="Script" id=2]
 [ext_resource path="res://assets/player.png" type="Texture" id=3]
+[ext_resource path="res://scenes/player_camera.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 12, 15 )
 
-[node name="player" type="RigidBody2D" index="0"]
+[node name="player" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -48,5 +49,7 @@ _sections_unfolded = [ "Offset", "Transform" ]
 position = Vector2( 0, 3 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="camera" parent="." index="3" instance=ExtResource( 4 )]
 
 

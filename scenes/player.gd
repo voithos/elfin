@@ -6,6 +6,7 @@ const FORCE = 50
 
 onready var sprite = get_node("sprite")
 onready var rays = get_node("rays")
+onready var camera = get_node("camera")
 
 onready var nearby_attractors = []
 
