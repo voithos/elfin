@@ -1,13 +1,17 @@
 # TODO
 
 - Create a tile map for basic walls
-- Create obstacles as part of the tile map
+  - Walls
+  - Floating barriers
+  - Non-floating blocks
+- Create obstacles
+  - Movable blocks / rigid bodies
 - Create a background, and set the background draw color
 - Create a goal scene and wire it up with the level
+  - Maybe it should be an orb?
 - Create free-floating attractors
+- Create dangers, like spikes / fire
 - Create spiky/evil attractors
-- Create dangers, like spikes / fire 
-- Create draw effects for push / pull mechanic
 - Create a death system (similar to Celeste)
 - Add UI glow / effect for reset / respawn (click and hold on player)
 - Add logic for reset/respawn system
@@ -21,12 +25,15 @@
 
 - Add "super push/pull" mechanic
 - Add moving platforms?
+- Timed danger / fire
 
+- Create draw effects for push / pull mechanic
 - Create foreground particle effects (see spore / flow)
 - Improve the raycasting effect
 - Improve character pixel art
 - Add bubbles particle effects on character
 - Add glow around player
+- Add an icon/logo
 
 - Add touch support
 
