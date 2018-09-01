@@ -41,6 +41,8 @@ func _physics_process(delta):
 			force *= FORCE
 			force *= multiplier
 			apply_impulse(Vector2(0, 0), force)
+			
+			_flip_sprite_based_on(attractor.global_position)
 	else:
 		# Idle.
 		var last_state = state
@@ -55,12 +57,12 @@ func _handle_mouse_motion(event):
 	_update_based_on_mouse()
 
 func _update_based_on_mouse():
-	_flip_sprite_based_on_mouse()
+	_flip_sprite_based_on(get_global_mouse_position())
 	_collect_attractors()
 
-func _flip_sprite_based_on_mouse():
-	# Flip sprite to the direction mouse is facing.
-	sprite.flip_h = global_position.x > get_global_mouse_position().x
+func _flip_sprite_based_on(target):
+	# Flip sprite to the direction target is facing.
+	sprite.flip_h = global_position.x > target.x
 
 func _collect_attractors():
 	# Determine target attractors.
