@@ -42,6 +42,7 @@ func _physics_process(delta):
 			force *= multiplier
 			apply_impulse(Vector2(0, 0), force)
 	else:
+		# Idle.
 		var last_state = state
 		state = STATE_IDLE
 		if last_state == STATE_PUSHPULL:
