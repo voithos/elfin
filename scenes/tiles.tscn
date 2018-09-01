@@ -17,7 +17,7 @@ extents = Vector2( 4, 2 )
 custom_solver_bias = 0.0
 extents = Vector2( 2, 4 )
 
-[node name="tiles" type="Node2D" index="0"]
+[node name="tiles" type="Node2D"]
 
 [node name="floor_up1" type="Sprite" parent="." index="0"]
 
@@ -548,7 +548,6 @@ shape = SubResource( 1 )
 
 [node name="floor_left5" type="Sprite" parent="." index="22"]
 
-editor/display_folded = true
 position = Vector2( 40, 31 )
 texture = ExtResource( 1 )
 vframes = 10

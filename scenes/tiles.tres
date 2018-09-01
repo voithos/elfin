@@ -691,4 +691,144 @@ extents = Vector2( 2, 4 )
 "shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 6, 4 )
 } ]
+48/name = "inner_nw1"
+48/texture = ExtResource( 1 )
+48/tex_offset = Vector2( 0, 0 )
+48/modulate = Color( 1, 1, 1, 1 )
+48/region = Rect2( 0, 64, 8, 8 )
+48/is_autotile = false
+48/occluder_offset = Vector2( 4, 4 )
+48/navigation_offset = Vector2( 4, 4 )
+48/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+49/name = "inner_nw2"
+49/texture = ExtResource( 1 )
+49/tex_offset = Vector2( 0, 0 )
+49/modulate = Color( 1, 1, 1, 1 )
+49/region = Rect2( 8, 64, 8, 8 )
+49/is_autotile = false
+49/occluder_offset = Vector2( 4, 4 )
+49/navigation_offset = Vector2( 4, 4 )
+49/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+50/name = "inner_ne1"
+50/texture = ExtResource( 1 )
+50/tex_offset = Vector2( 0, 0 )
+50/modulate = Color( 1, 1, 1, 1 )
+50/region = Rect2( 16, 64, 8, 8 )
+50/is_autotile = false
+50/occluder_offset = Vector2( 4, 4 )
+50/navigation_offset = Vector2( 4, 4 )
+50/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+51/name = "inner_ne2"
+51/texture = ExtResource( 1 )
+51/tex_offset = Vector2( 0, 0 )
+51/modulate = Color( 1, 1, 1, 1 )
+51/region = Rect2( 24, 64, 8, 8 )
+51/is_autotile = false
+51/occluder_offset = Vector2( 4, 4 )
+51/navigation_offset = Vector2( 4, 4 )
+51/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+52/name = "inner_se1"
+52/texture = ExtResource( 1 )
+52/tex_offset = Vector2( 0, 0 )
+52/modulate = Color( 1, 1, 1, 1 )
+52/region = Rect2( 32, 64, 8, 8 )
+52/is_autotile = false
+52/occluder_offset = Vector2( 4, 4 )
+52/navigation_offset = Vector2( 4, 4 )
+52/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+53/name = "inner_se2"
+53/texture = ExtResource( 1 )
+53/tex_offset = Vector2( 0, 0 )
+53/modulate = Color( 1, 1, 1, 1 )
+53/region = Rect2( 40, 64, 8, 8 )
+53/is_autotile = false
+53/occluder_offset = Vector2( 4, 4 )
+53/navigation_offset = Vector2( 4, 4 )
+53/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+54/name = "inner_sw1"
+54/texture = ExtResource( 1 )
+54/tex_offset = Vector2( 0, 0 )
+54/modulate = Color( 1, 1, 1, 1 )
+54/region = Rect2( 0, 72, 8, 8 )
+54/is_autotile = false
+54/occluder_offset = Vector2( 4, 4 )
+54/navigation_offset = Vector2( 4, 4 )
+54/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+55/name = "inner_sw2"
+55/texture = ExtResource( 1 )
+55/tex_offset = Vector2( 0, 0 )
+55/modulate = Color( 1, 1, 1, 1 )
+55/region = Rect2( 8, 72, 8, 8 )
+55/is_autotile = false
+55/occluder_offset = Vector2( 4, 4 )
+55/navigation_offset = Vector2( 4, 4 )
+55/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+56/name = "mineral1"
+56/texture = ExtResource( 1 )
+56/tex_offset = Vector2( 0, 0 )
+56/modulate = Color( 1, 1, 1, 1 )
+56/region = Rect2( 16, 72, 8, 8 )
+56/is_autotile = false
+56/occluder_offset = Vector2( 4, 4 )
+56/navigation_offset = Vector2( 4, 4 )
+56/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
+57/name = "mineral2"
+57/texture = ExtResource( 1 )
+57/tex_offset = Vector2( 0, 0 )
+57/modulate = Color( 1, 1, 1, 1 )
+57/region = Rect2( 24, 72, 8, 8 )
+57/is_autotile = false
+57/occluder_offset = Vector2( 4, 4 )
+57/navigation_offset = Vector2( 4, 4 )
+57/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
 

@@ -1,6 +1,6 @@
 extends Node
 
-const DEFAULT_DEBUG_WINDOW_SIZE = Vector2(960, 540)
+const DEFAULT_DEBUG_WINDOW_SIZE = Vector2(1280, 720)
 var is_paused = false
 
 func _ready():
