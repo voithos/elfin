@@ -1,12 +1,10 @@
 # TODO
 
 - Create a tile map for basic walls
-  - Walls
   - Floating barriers
   - Non-floating blocks
 - Create obstacles
   - Movable blocks / rigid bodies
-- Create a background, and set the background draw color
 - Create a goal scene and wire it up with the level
   - Maybe it should be an orb?
 - Create free-floating attractors
@@ -28,9 +26,11 @@
 - Timed danger / fire
 
 - Create draw effects for push / pull mechanic
+- Create a background
 - Create foreground particle effects (see spore / flow)
 - Improve the raycasting effect
 - Improve character pixel art
+- Make character sprite blink
 - Add bubbles particle effects on character
 - Add glow around player
 - Add an icon/logo
