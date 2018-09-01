@@ -38,7 +38,7 @@ flag_disable_z = true
 spread = 180.0
 flatness = 0.0
 gravity = Vector3( 0, 0, 0 )
-initial_velocity = 20.0
+initial_velocity = 30.0
 initial_velocity_random = 0.0
 angular_velocity = 0.0
 angular_velocity_random = 0.0
@@ -66,7 +66,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Angular Velocity", "Color", "Emission Shape", "Hue Variation", "Initial Velocity", "Spread", "Trail" ]
 
-[node name="goal" type="Sprite"]
+[node name="goal" type="Sprite" index="0"]
 
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
@@ -104,9 +104,9 @@ shape = SubResource( 2 )
 
 [node name="particles" type="Particles2D" parent="." index="2"]
 
-emitting = true
-amount = 30
-lifetime = 0.5
+emitting = false
+amount = 50
+lifetime = 0.75
 one_shot = false
 preprocess = 0.0
 speed_scale = 1.0
