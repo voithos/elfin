@@ -1,6 +1,5 @@
 # TODO
 
-- Lock-in nearby attractors when input is held down
 - Scale force by distance?
 - Create a tile map for basic walls
 - Create obstacles as part of the tile map

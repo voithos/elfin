@@ -2,13 +2,17 @@ extends RigidBody2D
 
 const ATTRACTOR_MIN_MOUSE_DIST = 75
 const ATTRACTOR_MIN_MOUSE_DIST_SQUARED = ATTRACTOR_MIN_MOUSE_DIST * ATTRACTOR_MIN_MOUSE_DIST
-const FORCE = 75
+const FORCE = 65
 
 onready var sprite = get_node("sprite")
 onready var rays = get_node("rays")
 onready var camera = get_node("camera")
 
+const STATE_IDLE = "IDLE"
+const STATE_PUSHPULL = "PUSHPULL"
+
 onready var nearby_attractors = []
+onready var state = STATE_IDLE
 
 func _ready():
 	pass
@@ -29,6 +33,7 @@ func _physics_process(delta):
 
 	if multiplier != 0 and len(nearby_attractors) > 0:
 		# A force is being applied. Calculate the force.
+		state = STATE_PUSHPULL
 		multiplier = multiplier / float(len(nearby_attractors))
 
 		for attractor in nearby_attractors:
@@ -36,17 +41,32 @@ func _physics_process(delta):
 			force *= FORCE
 			force *= multiplier
 			apply_impulse(Vector2(0, 0), force)
+	else:
+		var last_state = state
+		state = STATE_IDLE
+		if last_state == STATE_PUSHPULL:
+			# We exited from pushpull.
+			_update_based_on_mouse()
 
 func _handle_mouse_motion(event):
+	if state == STATE_PUSHPULL:
+		return
+	_update_based_on_mouse()
+
+func _update_based_on_mouse():
+	_flip_sprite_based_on_mouse()
+	_collect_attractors()
+
+func _flip_sprite_based_on_mouse():
 	# Flip sprite to the direction mouse is facing.
-	var mouse_pos = get_global_mouse_position()
-	sprite.flip_h = global_position.x > mouse_pos.x
-	
+	sprite.flip_h = global_position.x > get_global_mouse_position().x
+
+func _collect_attractors():
 	# Determine target attractors.
 	var attractors = get_tree().get_nodes_in_group("attractors")
 	var nearby = []
 	for attractor in attractors:
-		if mouse_pos.distance_squared_to(attractor.global_position) < ATTRACTOR_MIN_MOUSE_DIST_SQUARED:
+		if get_global_mouse_position().distance_squared_to(attractor.global_position) < ATTRACTOR_MIN_MOUSE_DIST_SQUARED:
 			nearby.append(attractor)
 
 	nearby_attractors = nearby
