@@ -947,17 +947,20 @@ hframes = 6
 frame = 40
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_up1" index="0"]
+[node name="area" type="Area2D" parent="spikes_up1" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_up1/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_up1/area" index="0"]
 
 position = Vector2( 0, 2 )
 shape = SubResource( 2 )
@@ -971,17 +974,20 @@ hframes = 6
 frame = 41
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_up2" index="0"]
+[node name="area" type="Area2D" parent="spikes_up2" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_up2/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_up2/area" index="0"]
 
 position = Vector2( 0, 2 )
 shape = SubResource( 2 )
@@ -995,17 +1001,20 @@ hframes = 6
 frame = 42
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_down1" index="0"]
+[node name="area" type="Area2D" parent="spikes_down1" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_down1/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_down1/area" index="0"]
 
 position = Vector2( 0, -2 )
 shape = SubResource( 2 )
@@ -1019,17 +1028,20 @@ hframes = 6
 frame = 43
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_down2" index="0"]
+[node name="area" type="Area2D" parent="spikes_down2" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_down2/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_down2/area" index="0"]
 
 position = Vector2( 0, -2 )
 shape = SubResource( 2 )
@@ -1043,17 +1055,20 @@ hframes = 6
 frame = 44
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_right1" index="0"]
+[node name="area" type="Area2D" parent="spikes_right1" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_right1/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_right1/area" index="0"]
 
 position = Vector2( -2, 0 )
 shape = SubResource( 3 )
@@ -1067,17 +1082,20 @@ hframes = 6
 frame = 45
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_right2" index="0"]
+[node name="area" type="Area2D" parent="spikes_right2" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_right2/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_right2/area" index="0"]
 
 position = Vector2( -2, 0 )
 shape = SubResource( 3 )
@@ -1091,17 +1109,20 @@ hframes = 6
 frame = 46
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_left1" index="0"]
+[node name="area" type="Area2D" parent="spikes_left1" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_left1/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_left1/area" index="0"]
 
 position = Vector2( 2, 0 )
 shape = SubResource( 3 )
@@ -1115,18 +1136,20 @@ hframes = 6
 frame = 47
 _sections_unfolded = [ "Animation", "Transform" ]
 
-[node name="staticbody" type="StaticBody2D" parent="spikes_left2" index="0"]
+[node name="area" type="Area2D" parent="spikes_left2" index="0"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
 _sections_unfolded = [ "Collision" ]
 
-[node name="collision" type="CollisionShape2D" parent="spikes_left2/staticbody" index="0"]
+[node name="collision" type="CollisionShape2D" parent="spikes_left2/area" index="0"]
 
 position = Vector2( 2, 0 )
 shape = SubResource( 3 )

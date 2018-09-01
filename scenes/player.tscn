@@ -13,8 +13,8 @@ extents = Vector2( 12, 15 )
 [node name="player" type="RigidBody2D"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 7
+collision_mask = 7
 mode = 2
 mass = 5.0
 friction = 0.9
