@@ -11,6 +11,6 @@ func _process(delta):
 	update()
 
 func _draw():
-	if player.nearby_attractors:
+	if len(player.nearby_attractors) > 0:
 		for attractor in player.nearby_attractors:
 			draw_line(Vector2(0, 0), player.to_local(attractor.global_position) / SPRITE_SCALE, Color(255, 0, 0), 1)

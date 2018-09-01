@@ -9,13 +9,13 @@
 custom_solver_bias = 0.0
 extents = Vector2( 12, 15 )
 
-[node name="player" type="RigidBody2D"]
+[node name="player" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
-mass = 1.0
+mass = 5.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 1.0
@@ -30,6 +30,7 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
+_sections_unfolded = [ "Angular", "Applied Forces", "Linear" ]
 
 [node name="rays" type="Node2D" parent="." index="0"]
 

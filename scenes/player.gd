@@ -2,6 +2,7 @@ extends RigidBody2D
 
 const ATTRACTOR_MIN_MOUSE_DIST = 75
 const ATTRACTOR_MIN_MOUSE_DIST_SQUARED = ATTRACTOR_MIN_MOUSE_DIST * ATTRACTOR_MIN_MOUSE_DIST
+const FORCE = 50
 
 onready var sprite = get_node("sprite")
 onready var rays = get_node("rays")
@@ -17,6 +18,23 @@ func _input(event):
 
 func _process(delta):
 	pass
+
+func _physics_process(delta):
+	var multiplier = 0
+	if Input.is_action_pressed("elfin_pull"):
+		multiplier = 1
+	if Input.is_action_pressed("elfin_push"):
+		multiplier = -1
+
+	if multiplier != 0 and len(nearby_attractors) > 0:
+		# A force is being applied. Calculate the force.
+		multiplier = multiplier / float(len(nearby_attractors))
+
+		for attractor in nearby_attractors:
+			var force = (attractor.global_position - global_position).normalized()
+			force *= FORCE
+			force *= multiplier
+			apply_impulse(Vector2(0, 0), force)
 
 func _handle_mouse_motion(event):
 	# Flip sprite to the direction mouse is facing.
