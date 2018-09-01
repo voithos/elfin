@@ -1,14 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/player.gd" type="Script" id=1]
-[ext_resource path="res://assets/player.png" type="Texture" id=2]
+[ext_resource path="res://scenes/rays.gd" type="Script" id=2]
+[ext_resource path="res://assets/player.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 12, 15 )
 
-[node name="player" type="RigidBody2D" index="0"]
+[node name="player" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -30,13 +31,18 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 
-[node name="sprite" type="Sprite" parent="." index="0"]
+[node name="rays" type="Node2D" parent="." index="0"]
 
 scale = Vector2( 3, 3 )
-texture = ExtResource( 2 )
+script = ExtResource( 2 )
+
+[node name="sprite" type="Sprite" parent="." index="1"]
+
+scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="collision" type="CollisionShape2D" parent="." index="1"]
+[node name="collision" type="CollisionShape2D" parent="." index="2"]
 
 position = Vector2( 0, 3 )
 shape = SubResource( 1 )
