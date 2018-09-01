@@ -10,12 +10,12 @@ extents = Vector2( 4, 4 )
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 4, 2 )
+extents = Vector2( 4, 1 )
 
 [sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-extents = Vector2( 2, 4 )
+extents = Vector2( 1, 4 )
 
 [node name="tiles" type="Node2D"]
 
@@ -1003,7 +1003,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_up1/area" index="0"]
 
-position = Vector2( 0, 2 )
+position = Vector2( 0, 3 )
 shape = SubResource( 2 )
 
 [node name="spikes_up2" type="Sprite" parent="." index="41"]
@@ -1031,7 +1031,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_up2/area" index="0"]
 
-position = Vector2( 0, 2 )
+position = Vector2( 0, 3 )
 shape = SubResource( 2 )
 
 [node name="spikes_down1" type="Sprite" parent="." index="42"]
@@ -1059,7 +1059,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_down1/area" index="0"]
 
-position = Vector2( 0, -2 )
+position = Vector2( 0, -3 )
 shape = SubResource( 2 )
 
 [node name="spikes_down2" type="Sprite" parent="." index="43"]
@@ -1087,7 +1087,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_down2/area" index="0"]
 
-position = Vector2( 0, -2 )
+position = Vector2( 0, -3 )
 shape = SubResource( 2 )
 
 [node name="spikes_right1" type="Sprite" parent="." index="44"]
@@ -1115,7 +1115,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_right1/area" index="0"]
 
-position = Vector2( -2, 0 )
+position = Vector2( -3, 0 )
 shape = SubResource( 3 )
 
 [node name="spikes_right2" type="Sprite" parent="." index="45"]
@@ -1143,7 +1143,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_right2/area" index="0"]
 
-position = Vector2( -2, 0 )
+position = Vector2( -3, 0 )
 shape = SubResource( 3 )
 
 [node name="spikes_left1" type="Sprite" parent="." index="46"]
@@ -1171,12 +1171,11 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_left1/area" index="0"]
 
-position = Vector2( 2, 0 )
+position = Vector2( 3, 0 )
 shape = SubResource( 3 )
 
 [node name="spikes_left2" type="Sprite" parent="." index="47"]
 
-editor/display_folded = true
 position = Vector2( 49, 67 )
 texture = ExtResource( 1 )
 vframes = 10
@@ -1199,7 +1198,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="collision" type="CollisionShape2D" parent="spikes_left2/area" index="0"]
 
-position = Vector2( 2, 0 )
+position = Vector2( 3, 0 )
 shape = SubResource( 3 )
 
 [node name="inner_nw1" type="Sprite" parent="." index="48"]
@@ -1444,7 +1443,6 @@ shape = SubResource( 1 )
 
 [node name="blank" type="Sprite" parent="." index="58"]
 
-editor/display_folded = true
 position = Vector2( 40, 85 )
 texture = ExtResource( 1 )
 vframes = 10

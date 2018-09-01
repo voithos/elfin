@@ -88,3 +88,6 @@ func finish_level():
 	state = STATE_VICTORY
 	nearby_attractors = []
 	sleeping = true
+
+func die():
+	print("dead")

@@ -1,11 +1,8 @@
 # TODO
 
-- Create a goal scene and wire it up with the level
-  - Maybe it should be an orb?
-- Create free-floating attractors
-- Create dangers, like spikes / fire
-- Create spiky/evil attractors
 - Create a death system (similar to Celeste)
+- Create free-floating attractors
+- Create spiky/evil attractors
 - Add UI glow / effect for reset / respawn (click and hold on player)
 - Add logic for reset/respawn system
 - Create obstacles
