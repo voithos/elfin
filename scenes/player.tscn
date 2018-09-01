@@ -10,7 +10,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 12, 15 )
 
-[node name="player" type="RigidBody2D"]
+[node name="player" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -18,7 +18,7 @@ collision_mask = 1
 mode = 2
 mass = 5.0
 friction = 1.0
-bounce = 0.0
+bounce = 0.1
 gravity_scale = 1.0
 custom_integrator = false
 continuous_cd = 0
@@ -35,8 +35,8 @@ _sections_unfolded = [ "Angular", "Applied Forces", "Linear" ]
 
 [node name="rays" type="Node2D" parent="." index="0"]
 
-scale = Vector2( 3, 3 )
 script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="sprite" type="Sprite" parent="." index="1"]
 

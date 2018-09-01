@@ -1,7 +1,5 @@
 extends Node2D
 
-const SPRITE_SCALE = 3
-
 onready var player = get_parent()
 
 func _ready():
@@ -13,4 +11,10 @@ func _process(delta):
 func _draw():
 	if len(player.nearby_attractors) > 0:
 		for attractor in player.nearby_attractors:
-			draw_line(Vector2(0, 0), player.to_local(attractor.global_position) / SPRITE_SCALE, Color(255, 0, 0), 1)
+			_draw_attractor_ray(attractor)
+
+func _draw_attractor_ray(attractor):
+	var from = Vector2(0, 0)
+	var to = player.to_local(attractor.global_position)
+	
+	draw_line(from, to, Color(1, 1, 1, 1), 2)
