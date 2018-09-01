@@ -831,4 +831,18 @@ extents = Vector2( 2, 4 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
 } ]
+58/name = "blank"
+58/texture = ExtResource( 1 )
+58/tex_offset = Vector2( 0, 0 )
+58/modulate = Color( 1, 1, 1, 1 )
+58/region = Rect2( 32, 72, 8, 8 )
+58/is_autotile = false
+58/occluder_offset = Vector2( 4, 4 )
+58/navigation_offset = Vector2( 4, 4 )
+58/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 4, 4 )
+} ]
 

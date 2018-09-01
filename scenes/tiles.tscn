@@ -548,6 +548,7 @@ shape = SubResource( 1 )
 
 [node name="floor_left5" type="Sprite" parent="." index="22"]
 
+editor/display_folded = true
 position = Vector2( 40, 31 )
 texture = ExtResource( 1 )
 vframes = 10
@@ -1438,6 +1439,30 @@ friction = 1.0
 bounce = 0.0
 
 [node name="collision" type="CollisionShape2D" parent="mineral2/staticbody" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="blank" type="Sprite" parent="." index="58"]
+
+editor/display_folded = true
+position = Vector2( 40, 85 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 6
+frame = 58
+_sections_unfolded = [ "Animation" ]
+
+[node name="staticbody" type="StaticBody2D" parent="blank" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision" type="CollisionShape2D" parent="blank/staticbody" index="0"]
 
 shape = SubResource( 1 )
 
