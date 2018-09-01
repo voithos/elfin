@@ -1,10 +1,5 @@
 # TODO
 
-- Create a tile map for basic walls
-  - Floating barriers
-  - Non-floating blocks
-- Create obstacles
-  - Movable blocks / rigid bodies
 - Create a goal scene and wire it up with the level
   - Maybe it should be an orb?
 - Create free-floating attractors
@@ -13,6 +8,8 @@
 - Create a death system (similar to Celeste)
 - Add UI glow / effect for reset / respawn (click and hold on player)
 - Add logic for reset/respawn system
+- Create obstacles
+  - Movable blocks / rigid bodies
 - Add music
 - Add sound effects
 
@@ -23,6 +20,7 @@
 
 - Add "super push/pull" mechanic
 - Add moving platforms?
+- Add floating barriers...?
 - Timed danger / fire
 
 - Create draw effects for push / pull mechanic

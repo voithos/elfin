@@ -10,7 +10,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 12, 15 )
 
-[node name="player" type="RigidBody2D" index="0"]
+[node name="player" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
