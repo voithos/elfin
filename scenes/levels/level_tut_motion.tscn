@@ -9,10 +9,10 @@
 [ext_resource path="res://scenes/goal.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/transition.tscn" type="PackedScene" id=8]
 
-[node name="level1" type="Node2D" index="0"]
+[node name="level_tut_motion" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
-next_level = "res://scenes/levels/level2.tscn"
+next_level = "res://scenes/levels/level_tut_jump.tscn"
 
 [node name="background" parent="." index="0" instance=ExtResource( 2 )]
 
