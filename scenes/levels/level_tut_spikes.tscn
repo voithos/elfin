@@ -10,7 +10,7 @@
 [ext_resource path="res://scenes/goal.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/transition.tscn" type="PackedScene" id=9]
 
-[node name="level_tut_spikes" type="Node2D"]
+[node name="level_tut_spikes" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 next_level = "res://scenes/levels/level_tut_persistence.tscn"
@@ -21,23 +21,23 @@ next_level = "res://scenes/levels/level_tut_persistence.tscn"
 
 [node name="foreground1" parent="foregrounds" index="0" instance=ExtResource( 3 )]
 
-position = Vector2( 546, -41.4182 )
-scale = Vector2( 11.4, 1.575 )
+position = Vector2( 546, -95.3341 )
+scale = Vector2( 11.4, 2.65332 )
 
 [node name="foreground2" parent="foregrounds" index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 576, 372 )
-scale = Vector2( 11.4, 1.575 )
+position = Vector2( 576, 398.625 )
+scale = Vector2( 11.4, 2.1075 )
 
 [node name="foreground3" parent="foregrounds" index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 999, 219.375 )
-scale = Vector2( 2.94, 4.6275 )
+position = Vector2( 1038, 219.375 )
+scale = Vector2( 3.72, 4.6275 )
 
 [node name="foreground4" parent="foregrounds" index="3" instance=ExtResource( 3 )]
 
-position = Vector2( -60, 207.375 )
-scale = Vector2( 1.92, 4.8675 )
+position = Vector2( -126, 138 )
+scale = Vector2( 3.24, 7.56 )
 
 [node name="foreground5" parent="foregrounds" index="4" instance=ExtResource( 3 )]
 

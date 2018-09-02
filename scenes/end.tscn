@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/fonts/pixeled.tres" type="DynamicFont" id=2]
 [ext_resource path="res://scenes/transition.tscn" type="PackedScene" id=3]
 
-[node name="end" type="Node2D" index="0"]
+[node name="end" type="Node2D"]
 
 [node name="canvas" type="CanvasLayer" parent="." index="0"]
 
