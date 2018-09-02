@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/title.png" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/pixeled.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scenes/transition.tscn" type="PackedScene" id=3]
+
+[node name="end" type="Node2D" index="0"]
+
+[node name="canvas" type="CanvasLayer" parent="." index="0"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="sprite" type="Sprite" parent="canvas" index="0"]
+
+position = Vector2( 320, 180 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="label" type="RichTextLabel" parent="canvas" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 279.0
+margin_top = 219.0
+margin_right = 352.0
+margin_bottom = 280.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "is fin"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="transition" parent="." index="1" instance=ExtResource( 3 )]
+
+
