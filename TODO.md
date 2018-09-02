@@ -12,12 +12,22 @@
 - Make tutorial levels
 - Make a bunch of other levels!
 
+- L1: tutorial
+- L2: push/pull tutorial
+- L3: spikes tutorial
+- L4: extra spikes
+- L5: controlled ascent / descent
+- L6: lots of spikes
+- L7: ...
+
 ## Stretch goals
 
 - Add "super push/pull" mechanic
 - Add moving platforms?
 - Add floating barriers...?
 - Timed danger / fire
+- Special items (think Celeste's strawberries)
+- Time attack mode
 
 - Create draw effects for push / pull mechanic
 - Create a background
