@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Elfin"
-run/main_scene="res://scenes/levels/level_tut_motion.tscn"
+run/main_scene="res://scenes/main_menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]

@@ -101,6 +101,4 @@ position = Vector2( 354, 246 )
 
 [node name="transition" parent="." index="7" instance=ExtResource( 8 )]
 
-start_immediately = true
-
 
