@@ -99,6 +99,7 @@ func die():
 	sleeping = true
 	nearby_attractors = []
 	animation.play("death_explosion")
+	camera.shake(0.5, 30, 6)
 
 func _on_explosion_done():
 	var level = get_tree().get_nodes_in_group("level")[0]
