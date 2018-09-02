@@ -170,7 +170,7 @@ tracks/2/keys = {
 "values": [ 0 ]
 }
 
-[node name="player" type="RigidBody2D" index="0"]
+[node name="player" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 7

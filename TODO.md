@@ -1,6 +1,5 @@
 # TODO
 
-- Add music
 - Add sound effects
 - Create free-floating attractors
 - Create spiky/evil attractors
