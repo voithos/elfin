@@ -9,7 +9,6 @@
 - Create a background
 
 - Add main menu with controls
-- Add an icon/logo
 
 - L6: 
 - L7: midair spikes
