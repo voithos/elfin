@@ -22,6 +22,7 @@ onready var state = STATE_MATERIALIZING
 var pushpull_dir = null
 
 func _ready():
+	add_to_group("player")
 	sprite.modulate.a = 0
 	call_deferred("_register_with_transition")
 

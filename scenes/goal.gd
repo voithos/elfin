@@ -15,3 +15,6 @@ func _on_area_body_entered(body):
 
 	var level = get_tree().get_nodes_in_group("level")[0]
 	level.begin_next_level_transition()
+	
+	var player = get_tree().get_nodes_in_group("player")[0]
+	player.camera.shake(0.75, 45, 2)
