@@ -6,9 +6,14 @@
 
 - Add main menu with controls
 
-- L6: 
-- L7: midair spikes
-- L8: ...
+L1: level_tut_motion
+l2: level_tut_jump
+l3: level_tut_spikes
+l4: level_tut_persistence
+l5: level_spike_horseshoe (level 6 actually)
+new l5: level_tut_darkness
+l7: level_danger_gems
+l8: level_spike_maze
 
 - Refine levels
 - Add UI glow / effect for reset / respawn (click and hold on player)
