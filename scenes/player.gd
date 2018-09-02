@@ -99,3 +99,7 @@ func die():
 	sleeping = true
 	nearby_attractors = []
 	animation.play("death_explosion")
+
+func _on_explosion_done():
+	var level = get_tree().get_nodes_in_group("level")[0]
+	level.begin_reset_transition()

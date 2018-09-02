@@ -1,6 +1,5 @@
 # TODO
 
-- Create a death system (similar to Celeste)
 - Create free-floating attractors
 - Create spiky/evil attractors
 - Add UI glow / effect for reset / respawn (click and hold on player)

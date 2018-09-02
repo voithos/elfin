@@ -2,9 +2,9 @@
 
 [ext_resource path="res://scenes/player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/rays.gd" type="Script" id=2]
-[ext_resource path="res://assets/player.png" type="Texture" id=3]
+[ext_resource path="res://assets/death.png" type="Texture" id=3]
 [ext_resource path="res://scenes/player_camera.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/death.png" type="Texture" id=5]
+[ext_resource path="res://assets/player.png" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -28,7 +28,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 5 ) ]
+"values": [ ExtResource( 3 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprite:hframes")
@@ -54,6 +54,20 @@ tracks/2/keys = {
 "update": 0,
 "values": [ 0, 8 ]
 }
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_on_explosion_done"
+} ]
+}
 
 [sub_resource type="Animation" id=3]
 
@@ -71,7 +85,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 3 ) ]
+"values": [ ExtResource( 5 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("sprite:hframes")
@@ -130,6 +144,8 @@ _sections_unfolded = [ "Transform" ]
 
 scale = Vector2( 3, 3 )
 texture = ExtResource( 3 )
+hframes = 9
+frame = 8
 _sections_unfolded = [ "Animation", "Offset", "Transform" ]
 
 [node name="collision" type="CollisionShape2D" parent="." index="2"]
