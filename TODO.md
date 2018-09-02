@@ -1,12 +1,9 @@
 # TODO
 
-- Create a background
+- refine all levels
 
-- make L5 (mobile attractors)
-- refine L3, L4, L6
-
-- Export and verify
 - Take screenshots
+- Submit game
 
 ## Stretch goals
 
@@ -29,6 +26,7 @@
   - Movable blocks / rigid bodies
 - Special items (think Celeste's strawberries)
 
+- Improve background
 - Improve draw effects for push / pull mechanic
 - Create foreground particle effects (see spore / flow)
 - Improve character pixel art
