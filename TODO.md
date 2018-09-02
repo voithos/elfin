@@ -1,6 +1,5 @@
 # TODO
 
-- Add sound effects
 - Create evil attractors
 - Create a background
 

@@ -4,6 +4,8 @@ const ATTRACTOR_MIN_MOUSE_DIST = 75
 const ATTRACTOR_MIN_MOUSE_DIST_SQUARED = ATTRACTOR_MIN_MOUSE_DIST * ATTRACTOR_MIN_MOUSE_DIST
 const FORCE = 65
 
+onready var sfx = get_node("/root/sfx")
+
 onready var sprite = get_node("sprite")
 onready var rays = get_node("rays")
 onready var camera = get_node("camera")
@@ -129,6 +131,7 @@ func die():
 	sleeping = true
 	nearby_attractors = []
 	animation.play("death_explosion")
+	sfx.play("death")
 	camera.shake(0.5, 30, 6)
 
 func _on_death_explosion_done():
