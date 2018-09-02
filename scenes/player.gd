@@ -13,9 +13,10 @@ const STATE_IDLE = "IDLE"
 const STATE_PUSHPULL = "PUSHPULL"
 const STATE_VICTORY = "VICTORY"
 const STATE_DYING = "DYING"
+const STATE_MATERIALIZING = "MATERIALIZING"
 
 onready var nearby_attractors = []
-onready var state = STATE_IDLE
+onready var state = STATE_MATERIALIZING
 
 func _ready():
 	pass
@@ -37,7 +38,7 @@ func _physics_process(delta):
 	_process_physics_action(delta)
 
 func _should_skip_actions():
-	return state == STATE_VICTORY or state == STATE_DYING
+	return state == STATE_VICTORY or state == STATE_DYING or state == STATE_MATERIALIZING
 
 func _process_physics_action(delta):
 	var multiplier = 0
@@ -101,6 +102,10 @@ func die():
 	animation.play("death_explosion")
 	camera.shake(0.5, 30, 6)
 
-func _on_explosion_done():
+func _on_death_explosion_done():
 	var level = get_tree().get_nodes_in_group("level")[0]
 	level.begin_reset_transition()
+
+func _on_birth_implosion_done():
+	state = STATE_IDLE
+	animation.play("idle")
