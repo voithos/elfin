@@ -66,7 +66,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Angular Velocity", "Color", "Emission Shape", "Hue Variation", "Initial Velocity", "Spread", "Trail" ]
 
-[node name="goal" type="Sprite" index="0"]
+[node name="goal" type="Sprite"]
 
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
@@ -87,7 +87,6 @@ blend_times = [  ]
 
 [node name="area" type="Area2D" parent="." index="1"]
 
-editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -97,6 +96,7 @@ collision_layer = 4
 collision_mask = 4
 audio_bus_override = false
 audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
 
 [node name="collision" type="CollisionShape2D" parent="area" index="0"]
 

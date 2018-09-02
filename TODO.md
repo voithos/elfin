@@ -1,13 +1,15 @@
 # TODO
 
-- Create free-floating attractors
-- Create spiky/evil attractors
-- Add UI glow / effect for reset / respawn (click and hold on player)
-- Add logic for reset/respawn system
-- Create obstacles
-  - Movable blocks / rigid bodies
 - Add music
 - Add sound effects
+- Create free-floating attractors
+- Create spiky/evil attractors
+
+- Add UI glow / effect for reset / respawn (click and hold on player)
+- Add logic for reset/respawn system
+
+- Create obstacles
+  - Movable blocks / rigid bodies
 
 - Make tutorial levels
 - Make a bunch of other levels!

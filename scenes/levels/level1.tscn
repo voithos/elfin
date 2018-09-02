@@ -8,7 +8,7 @@
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/goal.tscn" type="PackedScene" id=7]
 
-[node name="level1" type="Node2D"]
+[node name="level1" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 next_level = "res://scenes/levels/level2.tscn"
