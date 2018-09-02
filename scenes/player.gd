@@ -123,3 +123,4 @@ func _on_death_explosion_done():
 func _on_birth_implosion_done():
 	state = STATE_IDLE
 	animation.play("idle")
+	_update_based_on_mouse()
