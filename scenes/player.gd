@@ -71,16 +71,7 @@ func _process_physics_action(delta):
 	pushpull_dir = "push" if multiplier < 0 else "pull"
 	if multiplier != 0 and len(nearby_attractors) > 0:
 		# A force is being applied. Calculate the force.
-		state = STATE_PUSHPULL
-		multiplier = multiplier / float(len(nearby_attractors))
-
-		for attractor in nearby_attractors:
-			var force = (attractor.global_position - global_position).normalized()
-			force *= FORCE
-			force *= multiplier
-			apply_impulse(Vector2(0, 0), force)
-			
-			_flip_sprite_based_on(attractor.global_position)
+		_apply_force_to_attractors(multiplier)
 	else:
 		# Idle.
 		var last_state = state
@@ -88,6 +79,22 @@ func _process_physics_action(delta):
 		if last_state == STATE_PUSHPULL:
 			# We exited from pushpull.
 			_update_based_on_mouse()
+
+func _apply_force_to_attractors(multiplier):
+	state = STATE_PUSHPULL
+	multiplier = multiplier / float(len(nearby_attractors))
+
+	for attractor in nearby_attractors:
+		var force = (attractor.global_position - global_position).normalized()
+		force *= FORCE
+		force *= multiplier
+		apply_impulse(Vector2(0, 0), force)
+		
+		if attractor is RigidBody2D:
+			# Free anchor. Apply opposite force.
+			attractor.apply_impulse(Vector2(0, 0), -force)
+
+		_flip_sprite_based_on(attractor.global_position)
 
 func _handle_mouse_motion(event):
 	if state == STATE_PUSHPULL:

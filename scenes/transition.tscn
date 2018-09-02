@@ -69,7 +69,7 @@ tracks/1/keys = {
 } ]
 }
 
-[node name="transition" type="CanvasLayer"]
+[node name="transition" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -97,7 +97,6 @@ scale = Vector2( 80, 80 )
 texture = ExtResource( 2 )
 vframes = 4
 hframes = 9
-frame = 16
 _sections_unfolded = [ "Animation", "Transform" ]
 
 

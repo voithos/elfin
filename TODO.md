@@ -1,10 +1,6 @@
 # TODO
 
-- Add UI glow / effect for reset / respawn (click and hold on player)
-- Add logic for reset/respawn system
-
 - Add sound effects
-- Create free-floating attractors
 - Create evil attractors
 - Create a background
 
@@ -15,11 +11,14 @@
 - L8: ...
 
 - Refine levels
+- Add UI glow / effect for reset / respawn (click and hold on player)
+- Add logic for reset/respawn system
 - Keep track of time / # of deaths
 
 ## Stretch goals
 
 - Add "super push/pull" mechanic
+- Add "push/pull only" anchors
 - Add moving platforms?
 - Add floating barriers...?
 - Timed danger / fire
