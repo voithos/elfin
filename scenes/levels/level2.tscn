@@ -9,7 +9,7 @@
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/goal.tscn" type="PackedScene" id=8]
 
-[node name="level1" type="Node2D" index="0"]
+[node name="level2" type="Node2D"]
 
 script = ExtResource( 1 )
 next_level = "res://scenes/levels/level2.tscn"
@@ -18,26 +18,49 @@ next_level = "res://scenes/levels/level2.tscn"
 
 [node name="foregrounds" type="Node2D" parent="." index="1"]
 
-editor/display_folded = true
-
 [node name="foreground1" parent="foregrounds" index="0" instance=ExtResource( 3 )]
 
-position = Vector2( 214.5, -52.5 )
+position = Vector2( 264, -99 )
 scale = Vector2( 11.01, 2.67 )
 
 [node name="foreground2" parent="foregrounds" index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 177, 411 )
-scale = Vector2( 11.01, 2.67 )
+position = Vector2( 227.25, 411 )
+scale = Vector2( 12.015, 2.67 )
 
-[node name="foreground3" parent="foregrounds" index="2" instance=ExtResource( 3 )]
+[node name="foreground5" parent="foregrounds" index="2" instance=ExtResource( 3 )]
 
-position = Vector2( -243, 168 )
+position = Vector2( 36, 256.5 )
+scale = Vector2( 2.4, 1.05 )
+
+[node name="foreground6" parent="foregrounds" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -13.5, 43.5 )
+scale = Vector2( 1.41, 1.17 )
+
+[node name="foreground7" parent="foregrounds" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 625.002, 32.5 )
+scale = Vector2( 3.62004, 0.950001 )
+
+[node name="foreground8" parent="foregrounds" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 504, 228 )
+scale = Vector2( 1.26, 1.44 )
+
+[node name="foreground9" parent="foregrounds" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 528, 240 )
+scale = Vector2( 1.74, 1.2 )
+
+[node name="foreground3" parent="foregrounds" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( -219, 165 )
 scale = Vector2( 3.675, 6.045 )
 
-[node name="foreground4" parent="foregrounds" index="3" instance=ExtResource( 3 )]
+[node name="foreground4" parent="foregrounds" index="8" instance=ExtResource( 3 )]
 
-position = Vector2( 630, 201 )
+position = Vector2( 942, 219 )
 scale = Vector2( 3.675, 6.045 )
 
 [node name="tilemap" type="TileMap" parent="." index="2"]
@@ -59,30 +82,42 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 9, 53, 0, 131068, 8, 0, 131069, 8, 0, 131070, 8, 0, 131071, 8, 0, 65536, 8, 0, 196603, 15, 0, 131073, 21, 0, 131077, 56, 0, 131086, 54, 0, 262139, 15, 0, 196609, 39, 0, 196610, 11, 0, 196611, 6, 0, 196612, 10, 0, 196613, 11, 0, 196614, 8, 0, 196615, 9, 0, 196616, 7, 0, 196617, 11, 0, 196618, 10, 0, 196619, 7, 0, 196620, 11, 0, 196621, 10, 0, 196622, 9, 0, 196623, 7, 0, 196624, 9, 0, 196625, 11, 0, 196626, 50, 0, 327672, 10, 0, 327673, 10, 0, 327674, 10, 0, 327675, 32, 0, 262162, 18, 0, 393207, 16, 0, 327698, 23, 0, 327700, 53, 0, 458743, 16, 0, 393234, 22, 0, 524279, 16, 0, 458770, 21, 0, 589815, 16, 0, 524306, 18, 0, 655351, 16, 0, 589842, 23, 0, 589843, 55, 0, 720887, 16, 0, 655378, 21, 0, 786423, 16, 0, 786430, 26, 0, 786431, 4, 0, 720896, 3, 0, 720897, 3, 0, 720898, 0, 0, 720899, 5, 0, 720900, 4, 0, 720901, 3, 0, 720902, 3, 0, 720903, 1, 0, 720904, 3, 0, 720905, 4, 0, 720906, 5, 0, 720907, 3, 0, 720908, 2, 0, 720909, 3, 0, 720910, 3, 0, 720911, 4, 0, 720912, 5, 0, 720913, 3, 0, 720914, 53, 0, 851959, 16, 0, 851963, 25, 0, 851964, 4, 0, 851965, 4, 0, 786441, 57, 0, 786447, 55, 0, 917495, 16, 0, 917501, 53, 0, 851971, 53, 0, 851979, 54, 0, 983032, 4, 0, 983033, 4, 0, 983034, 4, 0 )
+tile_data = PoolIntArray( 9, 57, 0, 65538, 48, 0, 65539, 9, 0, 65540, 11, 0, 65541, 10, 0, 65542, 8, 0, 65543, 9, 0, 65544, 11, 0, 65545, 10, 0, 65546, 7, 0, 65547, 9, 0, 65548, 11, 0, 65549, 9, 0, 65550, 10, 0, 65551, 8, 0, 65552, 11, 0, 65553, 10, 0, 65554, 51, 0, 131073, 53, 0, 131074, 15, 0, 131090, 21, 0, 131092, 56, 0, 196610, 16, 0, 196626, 37, 0, 196627, 9, 0, 196628, 10, 0, 196629, 9, 0, 196630, 11, 0, 196631, 8, 0, 196632, 10, 0, 196633, 9, 0, 196634, 10, 0, 196635, 9, 0, 196636, 9, 0, 196637, 8, 0, 196638, 10, 0, 196639, 50, 0, 327678, 49, 0, 327679, 7, 0, 262144, 9, 0, 262145, 11, 0, 262146, 32, 0, 262175, 23, 0, 393214, 13, 0, 327711, 18, 0, 458750, 16, 0, 393234, 26, 0, 393235, 4, 0, 393236, 2, 0, 393237, 5, 0, 393238, 4, 0, 393239, 30, 0, 393247, 22, 0, 393248, 53, 0, 524286, 17, 0, 458770, 21, 0, 458773, 52, 0, 458775, 55, 0, 458776, 3, 0, 458777, 31, 0, 458783, 20, 0, 589822, 54, 0, 589823, 4, 0, 524288, 5, 0, 524289, 3, 0, 524290, 2, 0, 524291, 4, 0, 524292, 5, 0, 524293, 4, 0, 524294, 29, 0, 524306, 18, 0, 524313, 15, 0, 524319, 20, 0, 589830, 15, 0, 589842, 23, 0, 589849, 16, 0, 589855, 21, 0, 589857, 51, 0, 655362, 54, 0, 655366, 14, 0, 655378, 21, 0, 655385, 17, 0, 655391, 22, 0, 720902, 55, 0, 720903, 1, 0, 720904, 3, 0, 720905, 4, 0, 720906, 5, 0, 720907, 3, 0, 720908, 2, 0, 720909, 3, 0, 720910, 3, 0, 720911, 4, 0, 720912, 5, 0, 720913, 3, 0, 720914, 53, 0, 720922, 3, 0, 720923, 1, 0, 720924, 3, 0, 720925, 5, 0, 720926, 3, 0, 851978, 51, 0 )
 _sections_unfolded = [ "Cell", "Transform", "Z Index" ]
 
 [node name="danger_areas" type="Node2D" parent="." index="3"]
 
+editor/display_folded = true
+
 [node name="danger_area1" parent="danger_areas" index="0" instance=ExtResource( 5 )]
 
-position = Vector2( 528, 27 )
+position = Vector2( 57, -33 )
 scale = Vector2( 1.875, 0.1875 )
 
-[node name="anchor1" parent="." index="4" instance=ExtResource( 6 )]
+[node name="anchors" type="Node2D" parent="." index="4"]
 
-position = Vector2( 12, 252 )
+[node name="anchor1" parent="anchors" index="0" instance=ExtResource( 6 )]
 
-[node name="anchor" parent="." index="5" instance=ExtResource( 6 )]
+position = Vector2( 180, 252 )
 
-position = Vector2( 162, 108 )
+[node name="anchor" parent="anchors" index="1" instance=ExtResource( 6 )]
 
-[node name="player" parent="." index="6" instance=ExtResource( 7 )]
+position = Vector2( 285, 60 )
 
-position = Vector2( 123, 246 )
+[node name="anchor2" parent="anchors" index="2" instance=ExtResource( 6 )]
 
-[node name="goal" parent="." index="7" instance=ExtResource( 8 )]
+position = Vector2( 612, 276 )
 
-position = Vector2( 354, 246 )
+[node name="anchor3" parent="anchors" index="3" instance=ExtResource( 6 )]
+
+position = Vector2( 756, 276 )
+
+[node name="player" parent="." index="5" instance=ExtResource( 7 )]
+
+position = Vector2( 285, 246 )
+
+[node name="goal" parent="." index="6" instance=ExtResource( 8 )]
+
+position = Vector2( 684, 246 )
 
 

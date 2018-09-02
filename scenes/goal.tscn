@@ -66,7 +66,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Angular Velocity", "Color", "Emission Shape", "Hue Variation", "Initial Velocity", "Spread", "Trail" ]
 
-[node name="goal" type="Sprite"]
+[node name="goal" type="Sprite" index="0"]
 
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
@@ -106,11 +106,11 @@ shape = SubResource( 2 )
 
 emitting = false
 amount = 50
-lifetime = 0.75
-one_shot = false
+lifetime = 1.0
+one_shot = true
 preprocess = 0.0
 speed_scale = 1.0
-explosiveness = 0.1
+explosiveness = 1.0
 randomness = 0.0
 fixed_fps = 0
 fract_delta = true
