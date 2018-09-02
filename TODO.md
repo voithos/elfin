@@ -1,26 +1,22 @@
 # TODO
 
-- Add sound effects
-- Create free-floating attractors
-- Create spiky/evil attractors
-
 - Add UI glow / effect for reset / respawn (click and hold on player)
 - Add logic for reset/respawn system
 
-- Create obstacles
-  - Movable blocks / rigid bodies
+- Add sound effects
+- Create free-floating attractors
+- Create evil attractors
+- Create a background
 
-- Make tutorial levels
-- Make a bunch of other levels!
 - Add main menu with controls
+- Add an icon/logo
 
-- L1: tutorial
-- L2: push/pull tutorial
-- L3: spikes tutorial
-- L4: extra spikes
-- L5: controlled ascent / descent
-- L6: lots of spikes
-- L7: ...
+- L6: 
+- L7: midair spikes
+- L8: ...
+
+- Refine levels
+- Keep track of time / # of deaths
 
 ## Stretch goals
 
@@ -28,18 +24,15 @@
 - Add moving platforms?
 - Add floating barriers...?
 - Timed danger / fire
+- Create obstacles
+  - Movable blocks / rigid bodies
 - Special items (think Celeste's strawberries)
-- Time attack mode
 
-- Create draw effects for push / pull mechanic
-- Create a background
+- Improve draw effects for push / pull mechanic
 - Create foreground particle effects (see spore / flow)
-- Improve the raycasting effect
 - Improve character pixel art
 - Make character sprite blink
 - Add bubbles particle effects on character
-- Add glow around player
-- Add an icon/logo
 
 - Add touch support
 
