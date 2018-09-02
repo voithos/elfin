@@ -43,15 +43,27 @@ func _should_skip_actions():
 
 func _process_physics_action(delta):
 	var multiplier = 0
-	if Input.is_action_pressed("elfin_pull"):
-		multiplier = 1
-	if Input.is_action_pressed("elfin_push"):
-		multiplier = -1
 
+	# In order of priority for "just" presses. Otherwise, if both are held down,
+	# uses the saved pushpull_dir to favor whichever came last.
+	if Input.is_action_just_pressed("elfin_pull"):
+		multiplier = 1
+	elif Input.is_action_just_pressed("elfin_push"):
+		multiplier = -1
+	else:
+		var pull = Input.is_action_pressed("elfin_pull")
+		var push = Input.is_action_pressed("elfin_push")
+		if pull and push:
+			multiplier = 1 if pushpull_dir == "pull" else -1
+		elif pull:
+			multiplier = 1
+		elif push:
+			multiplier = -1
+			
+	pushpull_dir = "push" if multiplier < 0 else "pull"
 	if multiplier != 0 and len(nearby_attractors) > 0:
 		# A force is being applied. Calculate the force.
 		state = STATE_PUSHPULL
-		pushpull_dir = "push" if multiplier < 0 else "pull"
 		multiplier = multiplier / float(len(nearby_attractors))
 
 		for attractor in nearby_attractors:
