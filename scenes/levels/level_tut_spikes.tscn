@@ -10,7 +10,7 @@
 [ext_resource path="res://scenes/goal.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/transition.tscn" type="PackedScene" id=9]
 
-[node name="level_tut_spikes" type="Node2D"]
+[node name="level_tut_spikes" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 next_level = "res://scenes/levels/level_tut_persistence.tscn"
@@ -21,8 +21,68 @@ next_level = "res://scenes/levels/level_tut_persistence.tscn"
 
 [node name="foreground1" parent="foregrounds" index="0" instance=ExtResource( 3 )]
 
-position = Vector2( -87.75, -219.75 )
-scale = Vector2( 3.975, 1.575 )
+position = Vector2( 546, -41.4182 )
+scale = Vector2( 11.4, 1.575 )
+
+[node name="foreground2" parent="foregrounds" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 576, 372 )
+scale = Vector2( 11.4, 1.575 )
+
+[node name="foreground3" parent="foregrounds" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 999, 219.375 )
+scale = Vector2( 2.94, 4.6275 )
+
+[node name="foreground4" parent="foregrounds" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -60, 207.375 )
+scale = Vector2( 1.92, 4.8675 )
+
+[node name="foreground5" parent="foregrounds" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 1.19019e-05, 24 )
+scale = Vector2( 3.12, 1.2 )
+
+[node name="foreground6" parent="foregrounds" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( -48, 36 )
+scale = Vector2( 2.16, 1.44 )
+
+[node name="foreground7" parent="foregrounds" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 102, 294 )
+scale = Vector2( 2.76, 0.36 )
+
+[node name="foreground8" parent="foregrounds" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 30, 282 )
+scale = Vector2( 1.32, 0.6 )
+
+[node name="foreground9" parent="foregrounds" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 696, 294 )
+scale = Vector2( 3.6, 0.36 )
+
+[node name="foreground11" parent="foregrounds" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( 828, 270 )
+scale = Vector2( 0.960001, 0.84 )
+
+[node name="foreground12" parent="foregrounds" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 810, 30 )
+scale = Vector2( 1.56, 0.6 )
+
+[node name="foreground13" parent="foregrounds" index="11" instance=ExtResource( 3 )]
+
+position = Vector2( 564, 42 )
+scale = Vector2( 0.96, 0.84 )
+
+[node name="foreground10" parent="foregrounds" index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 564, 258 )
+scale = Vector2( 0.960001, 1.08 )
 
 [node name="tilemap" type="TileMap" parent="." index="2"]
 
@@ -43,10 +103,17 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 65542, 8, 0, 65543, 9, 0, 65544, 11, 0, 65545, 10, 0, 65546, 7, 0, 65547, 9, 0, 65548, 11, 0, 65549, 9, 0, 65550, 10, 0, 65551, 8, 0, 65552, 11, 0, 65553, 10, 0, 65554, 51, 0, 65555, 4, 0, 65556, 4, 0, 65557, 4, 0, 65561, 4, 0, 65562, 4, 0, 65563, 4, 0, 65564, 4, 0, 65565, 4, 0, 65566, 4, 0, 131078, 4, 0, 131093, 4, 0, 131097, 4, 0, 131102, 4, 0, 131103, 4, 0, 131104, 4, 0, 131105, 4, 0, 131106, 4, 0, 131107, 23, 0, 196610, 16, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196629, 9, 0, 196630, 11, 0, 196631, 8, 0, 196632, 10, 0, 196633, 9, 0, 196642, 47, 0, 196643, 23, 0, 262145, 4, 0, 262146, 32, 0, 262178, 46, 0, 262179, 23, 0, 327681, 4, 0, 327714, 47, 0, 327715, 23, 0, 393217, 4, 0, 393250, 46, 0, 393251, 23, 0, 458753, 4, 0, 458786, 47, 0, 458787, 23, 0, 524289, 4, 0, 524309, 4, 0, 524310, 4, 0, 524311, 4, 0, 524312, 4, 0, 524313, 4, 0, 524322, 46, 0, 524323, 23, 0, 589825, 4, 0, 589845, 4, 0, 589849, 16, 0, 589856, 4, 0, 589857, 4, 0, 589858, 4, 0, 589859, 4, 0, 655361, 4, 0, 655362, 4, 0, 655363, 4, 0, 655364, 4, 0, 655381, 4, 0, 655385, 17, 0, 655392, 4, 0, 720900, 4, 0, 720901, 4, 0, 720902, 4, 0, 720903, 4, 0, 720904, 4, 0, 720905, 4, 0, 720906, 4, 0, 720907, 40, 0, 720908, 41, 0, 720909, 40, 0, 720910, 40, 0, 720911, 41, 0, 720912, 40, 0, 720913, 41, 0, 720914, 40, 0, 720915, 40, 0, 720916, 41, 0, 720917, 4, 0, 720921, 4, 0, 720922, 3, 0, 720923, 1, 0, 720924, 3, 0, 720925, 5, 0, 720926, 3, 0, 720927, 4, 0, 720928, 4, 0, 786442, 4, 0, 786443, 4, 0, 786444, 4, 0, 786445, 4, 0, 786446, 4, 0, 786447, 4, 0, 786448, 4, 0, 786449, 4, 0, 786450, 4, 0, 786451, 4, 0, 786452, 4, 0, 786453, 4, 0 )
+tile_data = PoolIntArray( -65524, 55, 0, 65541, 56, 0, 65542, 49, 0, 65543, 9, 0, 65544, 6, 0, 65545, 10, 0, 65546, 7, 0, 65547, 11, 0, 65548, 10, 0, 65549, 8, 0, 65550, 10, 0, 65551, 8, 0, 65552, 10, 0, 65553, 11, 0, 65554, 10, 0, 65555, 9, 0, 65556, 10, 0, 65557, 51, 0, 65559, 48, 0, 65561, 49, 0, 65562, 8, 0, 65563, 11, 0, 65564, 9, 0, 65565, 11, 0, 65566, 51, 0, 65568, 57, 0, 65572, 51, 0, 131078, 14, 0, 131093, 18, 0, 131097, 12, 0, 131102, 36, 0, 131103, 8, 0, 131104, 10, 0, 131105, 9, 0, 131106, 11, 0, 131107, 50, 0, 196610, 48, 0, 196611, 10, 0, 196612, 11, 0, 196613, 10, 0, 196614, 34, 0, 196629, 39, 0, 196630, 10, 0, 196631, 8, 0, 196632, 11, 0, 196633, 35, 0, 196642, 47, 0, 196643, 23, 0, 262145, 49, 0, 262146, 32, 0, 262178, 46, 0, 262179, 18, 0, 327681, 15, 0, 327714, 47, 0, 327715, 22, 0, 393217, 17, 0, 393250, 46, 0, 393251, 21, 0, 458753, 12, 0, 458786, 47, 0, 458787, 21, 0, 524289, 13, 0, 524309, 25, 0, 524310, 3, 0, 524311, 1, 0, 524312, 3, 0, 524313, 29, 0, 524322, 46, 0, 524323, 22, 0, 589825, 15, 0, 589845, 22, 0, 589849, 16, 0, 589856, 26, 0, 589857, 3, 0, 589858, 0, 0, 589859, 53, 0, 655361, 55, 0, 655362, 3, 0, 655363, 5, 0, 655364, 31, 0, 655381, 21, 0, 655382, 56, 0, 655385, 15, 0, 655392, 21, 0, 720899, 57, 0, 720900, 55, 0, 720901, 5, 0, 720902, 2, 0, 720903, 4, 0, 720904, 5, 0, 720905, 3, 0, 720906, 30, 0, 720907, 40, 0, 720908, 41, 0, 720909, 40, 0, 720910, 40, 0, 720911, 41, 0, 720912, 40, 0, 720913, 41, 0, 720914, 40, 0, 720915, 40, 0, 720916, 41, 0, 720917, 18, 0, 720921, 55, 0, 720922, 3, 0, 720923, 1, 0, 720924, 3, 0, 720925, 5, 0, 720926, 3, 0, 720927, 4, 0, 720928, 52, 0, 786442, 54, 0, 786443, 3, 0, 786444, 5, 0, 786445, 4, 0, 786446, 4, 0, 786447, 3, 0, 786448, 5, 0, 786449, 2, 0, 786450, 3, 0, 786451, 5, 0, 786452, 3, 0, 786453, 53, 0, 851974, 53, 0, 851991, 48, 0 )
 _sections_unfolded = [ "Cell", "Transform", "Z Index" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="danger_areas" type="Node2D" parent="." index="3"]
+
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="danger_area1" parent="danger_areas" index="0" instance=ExtResource( 5 )]
 
@@ -59,6 +126,10 @@ position = Vector2( 832.5, 144 )
 scale = Vector2( 0.234375, 2.25 )
 
 [node name="anchors" type="Node2D" parent="." index="4"]
+
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="anchor" parent="anchors" index="0" instance=ExtResource( 6 )]
 
