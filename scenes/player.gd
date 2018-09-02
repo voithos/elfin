@@ -17,6 +17,7 @@ const STATE_MATERIALIZING = "MATERIALIZING"
 
 onready var nearby_attractors = []
 onready var state = STATE_MATERIALIZING
+var pushpull_dir = null
 
 func _ready():
 	pass
@@ -50,6 +51,7 @@ func _process_physics_action(delta):
 	if multiplier != 0 and len(nearby_attractors) > 0:
 		# A force is being applied. Calculate the force.
 		state = STATE_PUSHPULL
+		pushpull_dir = "push" if multiplier < 0 else "pull"
 		multiplier = multiplier / float(len(nearby_attractors))
 
 		for attractor in nearby_attractors:

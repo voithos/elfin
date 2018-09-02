@@ -13,6 +13,7 @@
 
 - Make tutorial levels
 - Make a bunch of other levels!
+- Add main menu with controls
 
 - L1: tutorial
 - L2: push/pull tutorial
@@ -43,6 +44,5 @@
 
 - Add touch support
 
-- Add main menu with controls
 - Add level transitions
 - Add death transition / effects

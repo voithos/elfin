@@ -12,7 +12,7 @@
 [node name="level2" type="Node2D"]
 
 script = ExtResource( 1 )
-next_level = "res://scenes/levels/level2.tscn"
+next_level = "res://scenes/levels/level3.tscn"
 
 [node name="background" parent="." index="0" instance=ExtResource( 2 )]
 
