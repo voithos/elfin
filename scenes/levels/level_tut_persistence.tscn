@@ -13,7 +13,7 @@
 [node name="level_tut_persistence" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
-next_level = "res://scenes/levels/level_spike_horseshoe.tscn"
+next_level = "res://scenes/levels/level_tut_mobile_attractors.tscn"
 
 [node name="background" parent="." index="0" instance=ExtResource( 2 )]
 
