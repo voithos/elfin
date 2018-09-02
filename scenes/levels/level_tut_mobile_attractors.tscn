@@ -11,7 +11,7 @@
 [ext_resource path="res://scenes/goal.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/transition.tscn" type="PackedScene" id=10]
 
-[node name="level_tut_mobile_attractors" type="Node2D"]
+[node name="level_tut_mobile_attractors" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 next_level = "res://scenes/levels/level_spike_horseshoe.tscn"
@@ -22,8 +22,58 @@ next_level = "res://scenes/levels/level_spike_horseshoe.tscn"
 
 [node name="foreground1" parent="foregrounds" index="0" instance=ExtResource( 3 )]
 
-position = Vector2( -87.75, -219.75 )
-scale = Vector2( 3.975, 1.575 )
+position = Vector2( 348, -98.625 )
+scale = Vector2( 9.6, 2.3475 )
+
+[node name="foreground2" parent="foregrounds" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 588, -90 )
+scale = Vector2( 4.8, 2.52 )
+
+[node name="foreground3" parent="foregrounds" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 396, 36 )
+scale = Vector2( 0.96, 0.96 )
+
+[node name="foreground4" parent="foregrounds" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 870, 126 )
+scale = Vector2( 3.24, 7.08 )
+
+[node name="foreground5" parent="foregrounds" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 732, -6.00002 )
+scale = Vector2( 1.44, 1.32 )
+
+[node name="foreground6" parent="foregrounds" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 726, 336 )
+scale = Vector2( 2.28, 4.08 )
+
+[node name="foreground7" parent="foregrounds" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 678, 372 )
+scale = Vector2( 3.24, 3.36 )
+
+[node name="foreground8" parent="foregrounds" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 384, 432 )
+scale = Vector2( 10.56, 2.64 )
+
+[node name="foreground9" parent="foregrounds" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( -114, 360 )
+scale = Vector2( 3.96, 4.08 )
+
+[node name="foreground10" parent="foregrounds" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( -204, 168 )
+scale = Vector2( 3.84, 7.92 )
+
+[node name="foreground11" parent="foregrounds" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( -126, -84 )
+scale = Vector2( 3.72, 2.88 )
 
 [node name="tilemap" type="TileMap" parent="." index="2"]
 
@@ -44,10 +94,17 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 2, 3, 0, 3, 3, 0, 4, 3, 0, 5, 3, 0, 6, 3, 0, 7, 3, 0, 8, 3, 0, 9, 3, 0, 10, 3, 0, 11, 3, 0, 12, 3, 0, 13, 3, 0, 14, 3, 0, 65538, 3, 0, 65550, 3, 0, 65554, 3, 0, 65555, 3, 0, 65556, 3, 0, 65557, 3, 0, 65558, 3, 0, 65559, 3, 0, 65560, 3, 0, 65561, 3, 0, 65562, 3, 0, 65563, 3, 0, 196607, 3, 0, 131072, 3, 0, 131073, 3, 0, 131074, 3, 0, 131086, 3, 0, 131090, 3, 0, 131099, 3, 0, 131100, 3, 0, 131101, 3, 0, 262143, 3, 0, 196622, 3, 0, 196623, 3, 0, 196624, 3, 0, 196625, 3, 0, 196626, 3, 0, 196637, 3, 0, 327679, 3, 0, 262173, 3, 0, 393215, 3, 0, 327705, 3, 0, 327706, 3, 0, 327707, 3, 0, 327708, 3, 0, 327709, 3, 0, 458751, 3, 0, 393216, 3, 0, 393217, 3, 0, 393218, 3, 0, 393219, 3, 0, 393241, 3, 0, 458755, 3, 0, 458777, 3, 0, 524291, 3, 0, 524309, 4, 0, 524310, 4, 0, 524311, 4, 0, 524312, 4, 0, 524313, 3, 0, 589827, 3, 0, 589845, 4, 0, 655363, 3, 0, 655381, 4, 0, 720899, 3, 0, 720900, 40, 0, 720901, 40, 0, 720902, 40, 0, 720903, 40, 0, 720904, 40, 0, 720905, 40, 0, 720906, 40, 0, 720907, 40, 0, 720908, 41, 0, 720909, 40, 0, 720910, 40, 0, 720911, 41, 0, 720912, 40, 0, 720913, 41, 0, 720914, 40, 0, 720915, 40, 0, 720916, 41, 0, 720917, 4, 0, 786435, 3, 0, 786436, 3, 0, 786437, 3, 0, 786438, 3, 0, 786439, 3, 0, 786440, 3, 0, 786441, 3, 0, 786442, 4, 0, 786443, 4, 0, 786444, 4, 0, 786445, 4, 0, 786446, 4, 0, 786447, 4, 0, 786448, 4, 0, 786449, 4, 0, 786450, 4, 0, 786451, 4, 0, 786452, 4, 0, 786453, 4, 0 )
+tile_data = PoolIntArray( -131068, 55, 0, -131059, 57, 0, 2, 48, 0, 3, 9, 0, 4, 9, 0, 5, 9, 0, 6, 9, 0, 7, 9, 0, 8, 9, 0, 9, 9, 0, 10, 9, 0, 11, 9, 0, 12, 9, 0, 13, 9, 0, 14, 51, 0, 26, 55, 0, 65538, 16, 0, 65550, 18, 0, 65554, 49, 0, 65555, 9, 0, 65556, 9, 0, 65557, 9, 0, 65558, 9, 0, 65559, 9, 0, 65560, 9, 0, 65561, 9, 0, 65562, 9, 0, 65563, 51, 0, 196607, 49, 0, 131072, 9, 0, 131073, 9, 0, 131074, 35, 0, 131086, 18, 0, 131089, 57, 0, 131090, 16, 0, 131099, 39, 0, 131100, 9, 0, 131101, 50, 0, 262143, 16, 0, 196622, 39, 0, 196623, 9, 0, 196624, 9, 0, 196625, 9, 0, 196626, 35, 0, 196637, 22, 0, 327679, 16, 0, 262173, 18, 0, 393215, 16, 0, 327705, 24, 0, 327706, 3, 0, 327707, 3, 0, 327708, 3, 0, 327709, 53, 0, 458751, 55, 0, 393216, 3, 0, 393217, 3, 0, 393218, 3, 0, 393219, 31, 0, 393241, 18, 0, 524287, 56, 0, 458755, 16, 0, 458777, 22, 0, 524291, 16, 0, 524309, 25, 0, 524310, 4, 0, 524311, 4, 0, 524312, 4, 0, 524313, 53, 0, 589827, 16, 0, 589845, 18, 0, 589847, 50, 0, 589849, 56, 0, 655361, 53, 0, 655363, 16, 0, 655381, 22, 0, 720899, 16, 0, 720900, 40, 0, 720901, 40, 0, 720902, 40, 0, 720903, 40, 0, 720904, 40, 0, 720905, 40, 0, 720906, 40, 0, 720907, 40, 0, 720908, 41, 0, 720909, 40, 0, 720910, 40, 0, 720911, 41, 0, 720912, 40, 0, 720913, 41, 0, 720914, 40, 0, 720915, 40, 0, 720916, 41, 0, 720917, 18, 0, 786435, 54, 0, 786436, 3, 0, 786437, 5, 0, 786438, 3, 0, 786439, 3, 0, 786440, 3, 0, 786441, 3, 0, 786442, 5, 0, 786443, 4, 0, 786444, 4, 0, 786445, 4, 0, 786446, 5, 0, 786447, 4, 0, 786448, 4, 0, 786449, 4, 0, 786450, 5, 0, 786451, 4, 0, 786452, 4, 0, 786453, 52, 0, 851978, 55, 0 )
 _sections_unfolded = [ "Cell", "Transform", "Z Index" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="danger_areas" type="Node2D" parent="." index="3"]
+
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="danger_area1" parent="danger_areas" index="0" instance=ExtResource( 5 )]
 
@@ -55,6 +112,10 @@ position = Vector2( 300, 282 )
 scale = Vector2( 6.375, 0.1875 )
 
 [node name="anchors" type="Node2D" parent="." index="4"]
+
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="anchor" parent="anchors" index="0" instance=ExtResource( 6 )]
 
