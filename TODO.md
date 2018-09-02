@@ -34,6 +34,3 @@
 - Add bubbles particle effects on character
 
 - Add touch support
-
-- Add level transitions
-- Add death transition / effects

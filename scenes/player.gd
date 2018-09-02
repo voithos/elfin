@@ -20,7 +20,15 @@ onready var state = STATE_MATERIALIZING
 var pushpull_dir = null
 
 func _ready():
-	pass
+	sprite.modulate.a = 0
+	call_deferred("_register_with_transition")
+
+func _register_with_transition():
+	var transition = get_tree().get_nodes_in_group("transition")[0]
+	transition.connect("unfade_complete", self, "_on_unfade_complete")
+
+func _on_unfade_complete():
+	animation.play("birth_implosion")
 
 func _input(event):
 	if _should_skip_actions():
