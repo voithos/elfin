@@ -9,7 +9,7 @@
 [ext_resource path="res://scenes/goal.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/transition.tscn" type="PackedScene" id=8]
 
-[node name="level_tut_motion" type="Node2D" index="0"]
+[node name="level_tut_motion" type="Node2D"]
 
 script = ExtResource( 1 )
 next_level = "res://scenes/levels/level_tut_jump.tscn"
@@ -100,5 +100,7 @@ position = Vector2( 123, 246 )
 position = Vector2( 354, 246 )
 
 [node name="transition" parent="." index="7" instance=ExtResource( 8 )]
+
+start_immediately = true
 
 

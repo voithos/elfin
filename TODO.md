@@ -4,8 +4,6 @@
 - Create evil attractors
 - Create a background
 
-- Add main menu with controls
-
 L1: level_tut_motion
 l2: level_tut_jump
 l3: level_tut_spikes

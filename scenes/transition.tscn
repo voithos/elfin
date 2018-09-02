@@ -69,7 +69,7 @@ tracks/1/keys = {
 } ]
 }
 
-[node name="transition" type="CanvasLayer" index="0"]
+[node name="transition" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -78,11 +78,12 @@ scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Animation" ]
+start_immediately = true
 
 [node name="animation" type="AnimationPlayer" parent="." index="0"]
 
 root_node = NodePath("..")
-autoplay = "unfade"
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
