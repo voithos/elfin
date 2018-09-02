@@ -10,11 +10,10 @@ func _ready():
 func _on_area_body_entered(body):
 	# The only body that can match is the player.
 	body.finish_level()
-	particles.emitting = true
 	sfx.play("goal")
 
 	var level = get_tree().get_nodes_in_group("level")[0]
 	level.begin_next_level_transition()
 	
 	var player = get_tree().get_nodes_in_group("player")[0]
-	player.camera.shake(0.75, 45, 2)
+	player.camera.shake(0.75, 30, 3)
