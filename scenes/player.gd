@@ -31,6 +31,7 @@ func _register_with_transition():
 
 func _on_unfade_complete():
 	animation.play("birth_implosion")
+	sfx.play("birth")
 
 func _input(event):
 	if _should_skip_actions():

@@ -8,6 +8,7 @@ const SFX_DB = -8.0
 const SAMPLES = {
 	"goal": preload("res://assets/sfx/goal.wav"),
 	"death": preload("res://assets/sfx/death.wav"),
+	"birth": preload("res://assets/sfx/birth.wav"),
 }
 
 const POOL_SIZE = 8
