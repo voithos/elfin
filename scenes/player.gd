@@ -7,10 +7,12 @@ const FORCE = 65
 onready var sprite = get_node("sprite")
 onready var rays = get_node("rays")
 onready var camera = get_node("camera")
+onready var animation = get_node("animation")
 
 const STATE_IDLE = "IDLE"
 const STATE_PUSHPULL = "PUSHPULL"
 const STATE_VICTORY = "VICTORY"
+const STATE_DYING = "DYING"
 
 onready var nearby_attractors = []
 onready var state = STATE_IDLE
@@ -19,7 +21,7 @@ func _ready():
 	pass
 
 func _input(event):
-	if state == STATE_VICTORY:
+	if _should_skip_actions():
 		return
 
 	if event is InputEventMouseMotion:
@@ -29,10 +31,13 @@ func _process(delta):
 	pass
 
 func _physics_process(delta):
-	if state == STATE_VICTORY:
+	if _should_skip_actions():
 		return
 
 	_process_physics_action(delta)
+
+func _should_skip_actions():
+	return state == STATE_VICTORY or state == STATE_DYING
 
 func _process_physics_action(delta):
 	var multiplier = 0
@@ -86,8 +91,11 @@ func _collect_attractors():
 
 func finish_level():
 	state = STATE_VICTORY
-	nearby_attractors = []
 	sleeping = true
+	nearby_attractors = []
 
 func die():
-	print("dead")
+	state = STATE_DYING
+	sleeping = true
+	nearby_attractors = []
+	animation.play("death_explosion")
