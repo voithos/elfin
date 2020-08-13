@@ -1,5 +1,7 @@
 # Elfin
 
+![Elfin](https://raw.github.com/voithos/elfin/master/elfin.png)
+
 Elfin is a timing-based puzzle platformer that follows the journey of a little sprite as it tries to escape the underground labyrinth.
 
 In Elfin, you cannot directly jump (or move, really). Instead, you must use anchors in the environment to move around, exerting force towards them or away from them.
